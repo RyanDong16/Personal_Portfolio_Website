@@ -13,10 +13,10 @@ export const HeroSection = () => {
                         <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">{" "}Dong</span>
                     </h1>
                     <p className="text-lg md:text-xl text-muted-foreground max-2-xl mx-auto opacity-0 animate-fade-in-delay-3">
-                        "Reach for the sky!" - Woody (Toy Story)
+                        "Reach for the sky!"
                     </p>
                     <p className="text-lg md:text-xl text-muted-foreground max-2-xl mx-auto opacity-0 animate-fade-in-delay-3">
-                        Creativity vs. Analytical. What I once thought I had to choose between, I now embrace together as an advantage.
+                        Creativity vs. Analytical. What I once thought I had to choose between, I now embrace them together.
                     </p>
                     <div className="pt-4 opacity-0 animate-fade-in-delay-4">
                         <a href="#projects" className="cosmic-button">

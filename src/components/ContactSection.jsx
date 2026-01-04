@@ -1,7 +1,11 @@
-import { Mail, Phone, MapPin, Linkedin, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Send, Film } from "lucide-react";
 import { cn } from "@/library/utils";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
+
+const emailKey = import.meta.env.VITE_EMAIL_KEY;
+const phoneKey = import.meta.env.VITE_PHONE_KEY;
+const locationKey = import.meta.env.VITE_LOCATION_KEY;
 
 export const ContactSection = () => {
 
@@ -31,8 +35,8 @@ export const ContactSection = () => {
                     Get In <span className="text-primary"> Touch</span>
                 </h2>
                 <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-                    Have a project in mind or want to collaborate? Feel free to reach out.
-                    I'm always open to discussing new opportunities.
+                    If you are seeking someone who can create meaningful impact, develop innovative solutions, and bring positive energy to your team, please 
+                    feel free to reach out to discuss potential opportunities. I look forward to talking to you!
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                     <div className="space-y-8">
@@ -45,10 +49,8 @@ export const ContactSection = () => {
                                 </div>
                                 <div>
                                     <h4 className="font-medium">Email</h4>
-                                    <a className="text-muted-foreground hover:text-primary transition-colors" 
-                                        href="mailto:ryan.q.dong@gmail.com"
-                                    > {/* use .env file */}
-                                        ryan.q.dong@gmail.com
+                                    <a className="text-muted-foreground hover:text-primary transition-colors" href="mailto:***@gmail.com">
+                                        {emailKey}
                                     </a>
                                 </div>
                             </div>
@@ -59,10 +61,8 @@ export const ContactSection = () => {
                                 </div>
                                 <div>
                                     <h4 className="font-medium">Phone</h4>
-                                    <a className="text-muted-foreground hover:text-primary transition-colors" 
-                                        href="tel:+1**********"
-                                    > {/* use .env file */}
-                                        + 1 (***) ***-****
+                                    <a className="text-muted-foreground hover:text-primary transition-colors" href="tel:+1**********">
+                                        {phoneKey}
                                     </a>
                                 </div>
                             </div>
@@ -73,8 +73,8 @@ export const ContactSection = () => {
                                 </div>
                                 <div>
                                     <h4 className="font-medium">Location</h4>
-                                    <a className="text-muted-foreground hover:text-primary transition-colors"> {/* use .env file */}
-                                        San Diego, California, USA
+                                    <a className="text-muted-foreground hover:text-primary transition-colors">
+                                        {locationKey}
                                     </a>
                                 </div>
                             </div>
@@ -85,6 +85,9 @@ export const ContactSection = () => {
                             <div className="flex space-x-4 justify-center">
                                 <a href="https://www.linkedin.com/in/ryan-dong-3a4bb3262/" target="_blank">
                                     <Linkedin />
+                                </a>
+                                <a href="https://letterboxd.com/rqdong/" target="_blank">
+                                    <Film />
                                 </a>
                             </div>
                         </div>

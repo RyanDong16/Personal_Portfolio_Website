@@ -5,26 +5,34 @@ const skills = [
     // Frontend
     {name: "HTML/CSS", level: 95, category: "frontend"},
     {name: "JavaScript", level: 90, category: "frontend"},
-    {name: "TypeScript", level: 85, category: "frontend"},
+    {name: "React", level: 85, category: "frontend"},
     {name: "Tailwind CSS", level: 90, category: "frontend"},
-    {name: "Next.js", level: 80, category: "frontend"},
 
     // Backend
     {name: "Node.js", level: 95, category: "backend"},
     {name: "Express", level: 90, category: "backend"},
-    {name: "MongoDB", level: 85, category: "backend"},
+    {name: "Supabase", level: 85, category: "backend"},
     {name: "PostgreSQL", level: 90, category: "backend"},
-    {name: "GraphQL", level: 80, category: "backend"},
+    {name: "Render", level: 80, category: "backend"},
 
     // Tools
     {name: "Git/GitHub", level: 95, category: "tools"},
-    {name: "Docker", level: 90, category: "tools"},
-    {name: "Canvas", level: 85, category: "tools"},
-    {name: "Figma", level: 90, category: "tools"},
-    {name: "VS Code", level: 80, category: "tools"},
+    {name: "Canva", level: 85, category: "tools"},
+    {name: "Adobe Premiere Pro", level: 85, category: "tools"},
+    {name: "Visual Studio Code", level: 80, category: "tools"},
+    {name: "Google Suite", level: 80, category: "tools"},
+    {name: "Microsoft Office", level: 80, category: "tools"},
+    {name: "Python", level: 80, category: "tools"},
+
+    // Personal
+    {name: "Attention to Detail", level: 95, category: "personal"},
+    {name: "Hard Working", level: 85, category: "personal"},
+    {name: "Customer Service", level: 85, category: "personal"},
+    {name: "Leadership", level: 80, category: "personal"},
+    {name: "Written/ Oral Communication ", level: 80, category: "personal"},
 ];
 
-const categories = ["all", "frontend", "backend", "tools"];
+const categories = ["all", "frontend", "backend", "tools", "personal"];
 
 export const SkillsSection = () => {
 
