@@ -15,6 +15,10 @@ export const AboutSection = () => {
                             Marketeer | Web Developer | Filmmaker
                         </h3>
                         <p className="text-muted-foreground">
+                            Currently attending San Diego State University, class of 2026, majoring in Computer Science with a minor in Television, Film, & New Media. 
+                            Maintaining a 3.69 GPA, with a strong blend of technical and creative skills.
+                        </p>
+                        <p className="text-muted-foreground">
                             An ambitious, open-minded professional who strives to exceed expectations and brings positivity to any work environment.
                             I enjoy collaborating with passionate people and am eager to learn from those with more experience.
                             A strong verbal and written communicator, easygoing yet determined, while bringing grit, focus, and maximum effort to everything in my path.
@@ -22,14 +26,12 @@ export const AboutSection = () => {
                         <p className="text-muted-foreground">
                             The world of entertainment, technology, and marketing has always captured my imagination and curiosity. Blending creativity 
                             alongside my technological and strategic mindset inspires me to explore new ways of storytelling, leveraging AI, and 
-                            understanding the business plans that shape changing audience engagement. I’m motivated to constantly learn and adapt to 
+                            understanding the business plans that shape changing audience engagement. I'm motivated to constantly learn and adapt to 
                             help skyrocket the entertainment industry with innovative and impactful contributions. 
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-                            <a href="#contact" className="cosmic-button">
-                                Get In Touch
-                            </a>
+                            <a href="#contact" className="cosmic-button">Get In Touch</a>
                         </div>
                     </div>
 

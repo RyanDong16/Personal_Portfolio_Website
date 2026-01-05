@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { sendChatMessage } from "../api/chat";
+import { sendChatMessage } from "../api/chatApi";
 import { BotMessageSquare, Ellipsis, Minimize2 } from 'lucide-react';
 
 export function Chatbot() {
@@ -52,29 +52,42 @@ export function Chatbot() {
     async function handleSend() {
         if (!input.trim() || loading) return;
 
-        const newMessages = [...messages, { role: "user", content: input }];
-        setMessages(newMessages);
+        const userMessage = input;
+        setMessages([...messages, { role: "user", content: userMessage }]);
         setInput("");
         setLoading(true);
 
         try {
-            const data = await sendChatMessage(newMessages);
-            setMessages([...newMessages, { role: "assistant", content: data.response }]);
-        } catch (err) {
-            setMessages([
-                ...newMessages,
+            const sessionId = localStorage.getItem("chat_session_id");
+
+            const data = await sendChatMessage(userMessage, sessionId);
+
+            if (!sessionId) {
+                localStorage.setItem("chat_session_id", data.session_id);
+            }
+
+            setMessages(prev => [
+                ...prev,
+                { role: "assistant", content: data.response }
+            ]);
+        }
+        catch (err) {
+            setMessages(prev => [
+                ...prev,
                 {
                     role: "assistant",
                     content:
-                        err.message?.toLowerCase().includes("rate limit")
-                            ? "I'm getting too many requests right now. Please wait a few seconds."
+                        err.message?.toLowerCase().includes("rate")
+                            ? "I'm getting too many requests. Please wait a moment."
                             : "Something went wrong. Please try again.",
                 },
             ]);
-        } finally {
+        }
+        finally {
             setLoading(false);
         }
     }
+
 
     function clearChat() {
         setMessages([]);
