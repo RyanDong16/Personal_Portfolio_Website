@@ -4,7 +4,7 @@ A modern, responsive personal portfolio website built to showcase my projects, s
 Designed with performance, accessibility, and clean UI/UX in mind.
 
 🔗 **Live Site:** https://yourwebsite.com  
-📄 **Resume:** https://yourwebsite.com/resume.pdf  
+📄 **Resume:** Message me a request through LinkedIn
 
 ---
 
