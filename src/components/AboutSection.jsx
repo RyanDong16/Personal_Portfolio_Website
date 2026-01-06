@@ -26,7 +26,7 @@ export const AboutSection = () => {
                         <p className="text-muted-foreground">
                             The world of entertainment, technology, and marketing has always captured my imagination and curiosity. Blending creativity 
                             alongside my technological and strategic mindset inspires me to explore new ways of storytelling, leveraging AI, and 
-                            understanding the business plans that shape changing audience engagement. I'm motivated to constantly learn and adapt to 
+                            understanding the business decisions that shape changing audience engagement. I'm motivated to constantly learn and adapt to 
                             help skyrocket the entertainment industry with innovative and impactful contributions. 
                         </p>
 
@@ -59,7 +59,7 @@ export const AboutSection = () => {
                                     <h4 className="font-semibold text-lg">Film/ Entertainment</h4>
                                     <p className="text-muted-foreground">
                                         Fascinated by all aspects of film, television, and pop culture. Proficient in Adobe Premiere Pro for editing,
-                                        with a strong passion for scriptwriting, creating short films, and developing original movie ideas.
+                                        with a strong passion for scriptwriting using Final Draft, creating short films, and developing original movie ideas.
                                     </p>
                                 </div>
                             </div>

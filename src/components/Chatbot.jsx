@@ -16,35 +16,27 @@ export function Chatbot() {
     });
 
     const messagesEndRef = useRef(null);
-
-    /* Prevent toggle in footer */
-    const footerRef = useRef(null);
     const [footerVisible, setFooterVisible] = useState(false);
 
     useEffect(() => {
         const footer = document.getElementById("footer");
         if (!footer) return;
-
         const observer = new IntersectionObserver(
             ([entry]) => setFooterVisible(entry.isIntersecting),
             { threshold: 0.1 }
         );
-
         observer.observe(footer);
         return () => observer.disconnect();
     }, []);
 
-    /* Persist chat */
     useEffect(() => {
         localStorage.setItem("chat_messages", JSON.stringify(messages));
     }, [messages]);
 
-    /* Persist open state */
     useEffect(() => {
         localStorage.setItem("chat_open", JSON.stringify(open));
     }, [open]);
 
-    /* Auto-scroll */
     useEffect(() => {
         messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
     }, [messages]);
@@ -66,28 +58,32 @@ export function Chatbot() {
                 localStorage.setItem("chat_session_id", data.session_id);
             }
 
+            // Check for friendly quota message from backend
+            const isQuotaMessage = data.response.includes("quota") || data.response.includes("Please try again later");
+
             setMessages(prev => [
                 ...prev,
-                { role: "assistant", content: data.response }
+                { 
+                    role: "assistant", 
+                    content: data.response,
+                    isQuota: isQuotaMessage 
+                }
             ]);
         }
         catch (err) {
+            const errorMessage = err.message?.toLowerCase().includes("rate")
+                ? "⚠️ I'm getting too many requests. Please wait a moment."
+                : "⚠️ Something went wrong. Please try again.";
+
             setMessages(prev => [
                 ...prev,
-                {
-                    role: "assistant",
-                    content:
-                        err.message?.toLowerCase().includes("rate")
-                            ? "I'm getting too many requests. Please wait a moment."
-                            : "Something went wrong. Please try again.",
-                },
+                { role: "assistant", content: errorMessage, isQuota: true }
             ]);
         }
         finally {
             setLoading(false);
         }
     }
-
 
     function clearChat() {
         setMessages([]);
@@ -102,39 +98,57 @@ export function Chatbot() {
                 flex flex-col overflow-hidden transition-all duration-300 origin-bottom-right
                 ${open ? "scale-100 opacity-100 translate-y-0" : "scale-90 opacity-0 translate-y-4 pointer-events-none"}`}
             >
-            {/* Header */}
-            <div className="flex items-center justify-between px-4 py-2 border-b border-border">
-                <span className="font-semibold text-sm">AI Assistant</span>
-                <button onClick={clearChat} className="text-xs text-red-500 hover:underline">Clear</button>
+                {/* Header */}
+                <div className="flex items-center justify-between px-4 py-2 border-b border-border">
+                    <span className="font-semibold text-sm">AI Assistant</span>
+                    <button onClick={clearChat} className="text-xs text-red-500 hover:underline">Clear</button>
+                </div>
+
+                {/* Messages */}
+                <div className="flex-1 overflow-y-auto px-3 py-2 space-y-2 text-sm">
+                    {messages.map((m, i) => (
+                        <div 
+                            key={i} 
+                            className={`max-w-[85%] px-3 py-2 rounded-lg 
+                                ${m.role === "user" 
+                                    ? "ml-auto bg-primary text-primary-foreground" 
+                                    : "mr-auto bg-background border border-border"} 
+                                ${m.isQuota ? "border-l-4 border-yellow-400 bg-yellow-50 text-black" : ""}`
+                            }
+                        >
+                            {m.content}
+                        </div>
+                    ))}
+                    <div ref={messagesEndRef} />
+                </div>
+
+                {/* Input */}
+                <div className="flex items-center gap-2 px-3 py-2 border-t border-border">
+                    <input 
+                        value={input} 
+                        onChange={(e) => setInput(e.target.value)} 
+                        onKeyDown={(e) => e.key === "Enter" && handleSend()}
+                        placeholder="Ask me anything..." 
+                        disabled={loading} 
+                        className="flex-1 rounded-md border border-border bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary" 
+                    />
+                    <button 
+                        onClick={handleSend} 
+                        disabled={loading} 
+                        className="cosmic-button px-4 py-2 text-sm"
+                    >
+                        {loading ? <Ellipsis /> : "Send"}
+                    </button>
+                </div>
             </div>
 
-            {/* Messages */}
-            <div className="flex-1 overflow-y-auto px-3 py-2 space-y-2 text-sm">
-                {messages.map((m, i) => (
-                    <div key={i} className={`max-w-[85%] px-3 py-2 rounded-lg ${m.role === "user" ? "ml-auto bg-primary text-primary-foreground" : 
-                        "mr-auto bg-background border border-border"}`}>{m.content}
-                    </div>
-                ))}
-                <div ref={messagesEndRef} />
-            </div>
-
-            {/* Input */}
-            <div className="flex items-center gap-2 px-3 py-2 border-t border-border">
-                <input value={input} onChange={(e) => setInput(e.target.value)} onKeyDown={(e) => e.key === "Enter" && handleSend()}
-                    placeholder="Ask me anything..." disabled={loading} className="flex-1 rounded-md border border-border bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary" />
-                <button onClick={handleSend} disabled={loading} className="cosmic-button px-4 py-2 text-sm">
-                    {loading ? <Ellipsis /> : "Send"}
+            {/* Toggle Button */}
+            <div className="flex justify-end">
+                <button onClick={() => setOpen(!open)} className="cosmic-button px-4 py-2 text-sm">
+                    {open ? <Minimize2 /> : <BotMessageSquare />}
                 </button>
             </div>
         </div>
-
-        {/* Toggle Button */}
-        <div className="flex justify-end">
-            <button onClick={() => setOpen(!open)} className="cosmic-button px-4 py-2 text-sm">
-                {open ? <Minimize2 /> : <BotMessageSquare />}
-            </button>
-        </div>
-    </div>
     );          
 }
 

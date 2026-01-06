@@ -3,37 +3,42 @@ import { cn } from "@/library/utils";
 
 const skills = [
     // Frontend
-    {name: "HTML/CSS", level: 95, category: "frontend"},
-    {name: "JavaScript", level: 95, category: "frontend"},
-    {name: "React", level: 95, category: "frontend"},
-    {name: "Tailwind CSS", level: 80, category: "frontend"},
+    {name: "HTML/CSS", level: 90, category: "frontend"},
+    {name: "JavaScript", level: 90, category: "frontend"},
+    {name: "React", level: 80, category: "frontend"},
+    {name: "Tailwind CSS", level: 70, category: "frontend"},
 
     // Backend
-    {name: "Node.js", level: 80, category: "backend"},
-    {name: "Supabase", level: 80, category: "backend"},
-    {name: "PostgreSQL", level: 80, category: "backend"},
+    {name: "Node.js", level: 60, category: "backend"},
+    {name: "Supabase", level: 70, category: "backend"},
+    {name: "PostgreSQL", level: 60, category: "backend"},
+    {name: "Express", level: 60, category: "backend"},
+    {name: "Render", level: 60, category: "backend"},
 
     // Tools
     {name: "GitHub", level: 80, category: "tools"},
     {name: "Canva", level: 100, category: "tools"},
     {name: "Adobe Premiere Pro", level: 90, category: "tools"},
     {name: "Visual Studio Code", level: 90, category: "tools"},
-    {name: "Google Suite", level: 100, category: "tools"},
+    {name: "Google Workspace", level: 100, category: "tools"},
     {name: "Microsoft Office Suite", level: 100, category: "tools"},
     {name: "Python", level: 80, category: "tools"},
+    {name: "Java", level: 70, category: "tools"},
+    {name: "C++", level: 60, category: "tools"},
+    {name: "Final Draft", level: 90, category: "tools"},
 
-    // Personal
-    {name: "Attention to Detail", level: 95, category: "personal"},
-    {name: "Hard Working", level: 100, category: "personal"},
-    {name: "Customer Service", level: 100, category: "personal"},
-    {name: "Leadership", level: 80, category: "personal"},
-    {name: "Written/ Oral Communication ", level: 90, category: "personal"},
-    {name: "Organizational", level: 100, category: "personal"},
-    {name: "Problem Solving", level: 90, category: "personal"},
-    {name: "Note Taking", level: 90, category: "personal"},
+    // Interpersonal
+    {name: "Attention to Detail", level: 95, category: "interpersonal"},
+    {name: "Hard Working", level: 100, category: "interpersonal"},
+    {name: "Customer Service", level: 100, category: "interpersonal"},
+    {name: "Leadership", level: 80, category: "interpersonal"},
+    {name: "Written/ Oral Communication ", level: 90, category: "interpersonal"},
+    {name: "Organizational", level: 100, category: "interpersonal"},
+    {name: "Problem Solving", level: 90, category: "interpersonal"},
+    {name: "Note-Taking", level: 90, category: "interpersonal"},
 ];
 
-const categories = ["all", "frontend", "backend", "tools", "personal"];
+const categories = ["all", "frontend", "backend", "tools", "interpersonal"];
 
 export const SkillsSection = () => {
     const [activeCategory, setActiveCategory] = useState("all");

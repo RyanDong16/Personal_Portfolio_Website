@@ -49,7 +49,7 @@ const projects = [
     {
         id: 6,
         title: "Finding Mission Impossible Mash-Up",
-        description: "A creative mashup combining the intense voice of the Mission: Impossible - Fallout trailer with clips from Finding Nemo and Finding Dory, reimagination a high-risk spy mission into a treacherous underwater adventure.",
+        description: "A creative mashup combining the intense voice of the Mission: Impossible - Fallout trailer with artistic visuals from Finding Nemo and Finding Dory, reimagining a high-stakes spy mission into a treacherous underwater adventure.",
         image: "/projects/mashup.gif",
         tags: ["Mashup", "Premiere Pro", "Editing", "Trailer"],
         demoUrl: "https://drive.google.com/file/d/10KuIjo_ii-0h9If06N26dtbKGWHpGs9Q/view?usp=sharing",
@@ -57,6 +57,15 @@ const projects = [
     },
     {
         id: 7,
+        title: "Short Film Script",
+        description: "“Just A Game” is a short film exploring the deadly sin of pride through the world of competitive pool. A gifted but arrogant pool player reigns unchallenged, until one game shatters his ego. As pride gives way to vulnerability, he’s forced to rediscover humility and what it truly means to earn respect, both on and off the table.",
+        image: "/projects/cruciblescript.png",
+        tags: ["Final Draft", "Screenwriting"],
+        demoUrl: "https://drive.google.com/file/d/1sg8LeCrtA8kPl03To9K2raso1yvcDVI3/view?usp=sharing",
+        githubUrl: "...",
+    },
+    {
+        id: 8,
         title: "December Nights Brochure",
         description: "December Nights is San Diego’s beloved holiday celebration at Balboa Park, featuring festive lights, live performances, international food, and cultural experiences. This brochure is your guide to two magical evenings of music, art, and seasonal cheer for the whole community.",
         image: "/projects/christmasbrochure.gif",
@@ -65,14 +74,14 @@ const projects = [
         githubUrl: "...",
     },
     {
-        id: 8,
+        id: 9,
         title: "Portfolio Website",
-        description: "A collaborative group project developing a comprehensive marketing presentation for the independent film, Spine Scam. Outlines strategic outreach across medical organizations, patient advocacy groups, content creators, and both paid and unpaid social media channels to maximize awareness, credibility, and audience engagement.",
+        description: "A modern, responsive personal portfolio website built to showcase my projects, skills, certifications, and experience. Designed with performance, accessibility, and clean UI/UX in mind.",
         image: "/projects/portfolio.gif",
-        tags: ["React", "TailWindCSS", "FastAPI", "Chatbot"],
+        tags: ["React", "TailWindCSS", "FastAPI", "Chatbot", "Gmail API"],
         demoUrl: "...",
         githubUrl: "https://github.com/RyanDong16/Personal_Portfolio_Website",
-    }
+    },
 ];
 
 export const ProjectsSection = () => {

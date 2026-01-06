@@ -1,4 +1,5 @@
 // server.js
+// how to run server /Portfolio_Website/server type in: node server.js
 import express from "express";
 import cors from "cors";
 import { google } from "googleapis";
