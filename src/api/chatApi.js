@@ -1,4 +1,5 @@
-const API_URL = "http://localhost:8000/chat";
+// src/api/chatApi.js
+const API_URL = process.env.REACT_APP_BACKEND_URL || "https://langchain-chatbot-backend.onrender.com/chat";
 
 export async function sendChatMessage(message, sessionId) {
   const res = await fetch(API_URL, {
@@ -11,9 +12,13 @@ export async function sendChatMessage(message, sessionId) {
   });
 
   if (!res.ok) {
-    const err = await res.json();
-    throw new Error(err.detail || "Server error");
+    let errMsg = "Server error";
+    try {
+      const err = await res.json();
+      errMsg = err.detail || err.message || errMsg;
+    } catch {}
+    throw new Error(errMsg);
   }
 
-  return res.json();
+  return res.json(); // expected: { reply: "..." }
 }
