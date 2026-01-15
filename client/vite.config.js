@@ -11,4 +11,9 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  preview: {
+    allowedHosts: [
+      'portfolio-website-frontend-d62m.onrender.com'
+    ]
+  },
 });
