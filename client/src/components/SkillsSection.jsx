@@ -35,7 +35,8 @@ const skills = [
     {name: "Written/ Oral Communication ", level: 90, category: "interpersonal"},
     {name: "Organizational", level: 100, category: "interpersonal"},
     {name: "Problem Solving", level: 90, category: "interpersonal"},
-    {name: "Note-Taking", level: 90, category: "interpersonal"},
+    {name: "Note-Taking", level: 80, category: "interpersonal"},
+    {name: "Proactive", level: 100, category: "interpersonal"},
 ];
 
 const categories = ["all", "frontend", "backend", "tools", "interpersonal"];

@@ -1,5 +1,8 @@
 // src/api/chatApi.js
-const API_URL = process.env.REACT_APP_BACKEND_URL || "https://langchain-chatbot-backend.onrender.com/chat";
+
+const API_URL =
+  import.meta.env.VITE_BACKEND_URL ||
+  "https://langchain-chatbot-backend.onrender.com/chat";
 
 export async function sendChatMessage(message, sessionId) {
   const res = await fetch(API_URL, {
@@ -16,7 +19,9 @@ export async function sendChatMessage(message, sessionId) {
     try {
       const err = await res.json();
       errMsg = err.detail || err.message || errMsg;
-    } catch {}
+    } catch {
+      // ignore JSON parse errors
+    }
     throw new Error(errMsg);
   }
 
