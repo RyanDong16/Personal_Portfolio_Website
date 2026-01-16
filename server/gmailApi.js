@@ -1,17 +1,18 @@
 import { google } from "googleapis";
 
-// Create OAuth client (Desktop App — no redirect URI)
+// Create OAuth client
 const oAuth2Client = new google.auth.OAuth2(
   process.env.CLIENT_ID,
-  process.env.CLIENT_SECRET
+  process.env.CLIENT_SECRET,
+  process.env.REDIRECT_URI
 );
 
-// Attach refresh token
+// Set refresh token
 oAuth2Client.setCredentials({
   refresh_token: process.env.REFRESH_TOKEN,
 });
 
-// Create Gmail API client
+// Create Gmail client
 const gmail = google.gmail({
   version: "v1",
   auth: oAuth2Client,
@@ -41,8 +42,6 @@ export async function sendEmail({ name, email, message }) {
 
   await gmail.users.messages.send({
     userId: "me",
-    requestBody: {
-      raw: encodedMessage,
-    },
+    requestBody: { raw: encodedMessage },
   });
 }
