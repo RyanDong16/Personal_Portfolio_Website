@@ -9,10 +9,13 @@ export async function sendEmail({ name, email, message }) {
     body: JSON.stringify({ name, email, message }),
   });
 
+  // 🔴 If backend failed, DO NOT parse JSON
   if (!res.ok) {
-    const err = await res.json();
-    throw new Error(err.error || "Failed to send email");
+    const text = await res.text();
+    console.error("Backend error:", text);
+    throw new Error("Failed to send email");
   }
 
+  // ✅ Only parse JSON when we KNOW it exists
   return res.json();
 }
