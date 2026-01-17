@@ -31,6 +31,17 @@ app.post("/send-email", async (req, res) => {
   }
 });
 
+// verify the .env variables
+app.get("/debug/env", (req, res) => {
+  res.json({
+    CLIENT_ID: !!process.env.CLIENT_ID,
+    CLIENT_SECRET: !!process.env.CLIENT_SECRET,
+    REFRESH_TOKEN: !!process.env.REFRESH_TOKEN,
+    MY_EMAIL: !!process.env.MY_EMAIL,
+  });
+});
+
+
 // IMPORTANT for deployment
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () =>
