@@ -36,15 +36,15 @@ export const ContactSection = () => {
       });
 
       setForm({ name: "", email: "", message: "" });
-    } catch (err) {
-      console.error(err);
-
+    }
+    catch (err) {
       toast({
         title: "Error",
-        description: "Failed to send the message. Please try again later.",
+        description: "Failed to send the message.",
         variant: "destructive",
       });
-    } finally {
+    }
+    finally {
       setIsSubmitting(false);
     }
   };
