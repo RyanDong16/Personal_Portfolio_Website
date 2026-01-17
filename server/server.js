@@ -17,6 +17,11 @@ app.get("/", (req, res) => {
   res.send("Gmail backend is live 🚀");
 });
 
+// verify an error
+app.get("/debug/ping", (req, res) => {
+  res.status(200).send("PING_OK_v3");
+});
+
 // API route
 app.post("/send-email", async (req, res) => {
   try {
