@@ -3,7 +3,7 @@
 A modern, responsive personal portfolio website built to showcase my projects, skills, certifications, and experience.  
 Designed with performance, accessibility, and clean UI/UX in mind.
 
-🔗 **Live Site:** https://yourwebsite.com  
+🔗 **Live Site:** Message me a request through LinkedIn
 📄 **Resume:** Message me a request through LinkedIn
 
 ---
@@ -52,7 +52,7 @@ This portfolio includes an AI-powered chatbot built with FastAPI, LangChain, and
 
 The chatbot runs as a **separate backend service** and is documented independently.
 
-📂 See: `/chatbot/README.md`
+📂 See: `server/chatbot/README.md`
 
 ---
 
@@ -61,15 +61,16 @@ The chatbot runs as a **separate backend service** and is documented independent
 The **Contact section** sends emails directly to my Gmail inbox using the **Gmail API**.
 
 ### Why a backend is required
-- Gmail API requires **OAuth credentials and refresh tokens**
+- Gmail API requires **OAuth 2.0 credentials**
+- A **refresh token** must be stored securely
 - Secrets **cannot be exposed in the browser**
-- Emails are securely sent from an Express server
+- Prevents spam abuse and client-side credential leaks
 
 ### Flow
 - React Contact Form
-- ↓ POST /send-email
+-    ↓ POST /send-email
 - Express Server (OAuth)
-- ↓ Gmail API
+-    ↓ Gmail API
 - My Gmail Inbox
 
 ---
@@ -79,31 +80,39 @@ The **Contact section** sends emails directly to my Gmail inbox using the **Gmai
 ```bash
 Portfolio_Website/
 ├── public/
+│   ├── certificates/
+│   └── projects/
 │
-├── src/
-│   ├── components/       # Reusable UI components (ContactSection, Chatbot, etc.)
-│   ├── pages/            # Route-level pages (Home, NotFound)
-│   ├── api/              # Frontend API helpers
-│   ├── hooks/            # Custom hooks (use-toast)
-│   ├── library/          # Utilities (cn, helpers)
-│   ├── assets/
+├── client/
+│   ├── public
+│   │   ├── certificates/
+│   │   └── projects/
+│   ├── src/
+│   │   ├── components/       # Reusable UI components (ContactSection, Chatbot, etc.)
+│   │   ├── pages/            # Route-level pages (Home, NotFound)
+│   │   ├── api/              # Frontend API helpers
+│   │   ├── api/              # Frontend API helpers
+│   │   ├── hooks/            # Custom hooks (use-toast)
+│   │   ├── library/          # Utilities (cn, helpers)
+│   │   └── assets/
+│   ├── .env
+│   ├── vite.config.js
+│   ├── index.html
+│   ├── index.css
+│   ├── main.jsx
+│   ├── package.json
 │   └── App.jsx
-│
-├── server/               # Express backend (Gmail API)
+├── server/                   # Express backend (Gmail API)
 │   ├── server.js
-│   └── .env
-│
-└── chatbot/
-│   ├── README.md           # FULL chatbot docs
-│   ├── main.py
-│   ├── requirements.txt
-│   └── .env
-│
-├── vite.config.js
-├── index.html
-├── package.json
+│   ├── getRefreshToken.js
+│   ├── gmailApi.js
+│   ├── package.json
+│   └── chatbot/
+│       ├── README.md           # Full chatbot docs
+│       ├── main.py
+│       ├── .env
+│       └── requirements.txt
 ├── .gitignore
-├── .env
 └── README.md
 
 ---
