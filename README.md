@@ -89,6 +89,7 @@ Portfolio_Website/
 │   │   └── projects/
 │   ├── src/
 │   │   ├── components/       # Reusable UI components (ContactSection, Chatbot, etc.)
+│   │   |   └── ui
 │   │   ├── pages/            # Route-level pages (Home, NotFound)
 │   │   ├── api/              # Frontend API helpers
 │   │   ├── api/              # Frontend API helpers

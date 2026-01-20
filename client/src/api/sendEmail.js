@@ -1,6 +1,8 @@
+const GMAIL_API_KEY = import.meta.env.VITE_GMAIL_API_URL;
+
 export async function sendEmail(formData) {
   const res = await fetch(
-    import.meta.env.VITE_GMAIL_API_URL + "/send-email",
+    GMAIL_API_KEY + "/send-email",
     {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -10,7 +12,7 @@ export async function sendEmail(formData) {
 
   console.log(
     "API URL:",
-    import.meta.env.VITE_GMAIL_API_URL
+    GMAIL_API_KEY
   );
 
 
