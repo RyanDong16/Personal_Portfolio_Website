@@ -8,6 +8,12 @@ export async function sendEmail(formData) {
     }
   );
 
+  console.log(
+    "API URL:",
+    import.meta.env.VITE_GMAIL_API_URL
+  );
+
+
   const text = await res.text(); // ✅ SAFE for all responses
 
   if (!res.ok) {
