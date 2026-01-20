@@ -36,11 +36,12 @@ export const ContactSection = () => {
       });
 
       setForm({ name: "", email: "", message: "" });
-    }
-    catch (err) {
+    } catch (err) {
+      console.error("Backend error:", err.message);
+
       toast({
         title: "Error",
-        description: "Failed to send the message.",
+        description: err.message || "Failed to send message",
         variant: "destructive",
       });
     }

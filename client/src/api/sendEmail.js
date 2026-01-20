@@ -1,19 +1,18 @@
-const API_URL = import.meta.env.VITE_GMAIL_API_URL;
+export async function sendEmail(formData) {
+  const res = await fetch(
+    import.meta.env.VITE_GMAIL_API_URL + "/send-email",
+    {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    }
+  );
 
-export async function sendEmail({ name, email, message }) {
-  const res = await fetch(`${API_URL}/send-email`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ name, email, message }),
-  });
+  const text = await res.text(); // ✅ SAFE for all responses
 
-  // If backend failed, read text safely
   if (!res.ok) {
-    const text = await res.text();
-    console.error("Backend error:", text);
-    throw new Error("Failed to send email");
+    throw new Error(text || "Backend error");
   }
 
-  // ✅ DO NOT parse JSON
-  return;
+  return text;
 }
