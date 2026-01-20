@@ -57,11 +57,11 @@ const projects = [
     },
     {
         id: 7,
-        title: "Short Film Script",
-        description: "“Just A Game” is a short film exploring the deadly sin of pride through the world of competitive pool. A gifted but arrogant pool player reigns unchallenged, until one game shatters his ego. As pride gives way to vulnerability, he’s forced to rediscover humility and what it truly means to earn respect, both on and off the table.",
-        image: "/projects/cruciblescript.png",
-        tags: ["Final Draft", "Screenwriting"],
-        demoUrl: "https://drive.google.com/file/d/1sg8LeCrtA8kPl03To9K2raso1yvcDVI3/view?usp=sharing",
+        title: "Spine Scam Launch Strategies Presentation",
+        description: "The presentation showcases the Facebook and Instagram launch strategies for the independent film Spine Scam, highlighting target audience insights, platform-specific content, influential promotion, and a strategic posting schedule designed to build awareness and drive engagement.",
+        image: "/projects/launchslides.png",
+        tags: ["Google Slides", "Spine Scam Movie", "Marketing", "Strategies"],
+        demoUrl: "https://drive.google.com/file/d/1pkOT98FnUroo8gWiFRRawY6adSYf3aCO/view?usp=sharing",
         githubUrl: "...",
     },
     {

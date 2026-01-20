@@ -24,22 +24,11 @@ app.get("/debug/ping", (req, res) => {
 
 // API route
 app.post("/send-email", async (req, res) => {
-  try {
-    await sendEmail(req.body);
-    res.status(200).json({ success: true });
-  } catch (error) {
-    console.error("EMAIL ERROR FULL:", error);
+  console.log("SEND EMAIL HIT");
+  console.log("BODY:", req.body);
 
-    res.status(500).json({
-      success: false,
-      error:
-        error?.response?.data?.error?.message ||
-        error?.message ||
-        "Unknown Gmail API error",
-    });
-  }
+  return res.status(500).send("FORCED_BACKEND_ERROR_TEST");
 });
-
 
 // verify the .env variables
 app.get("/debug/env", (req, res) => {
