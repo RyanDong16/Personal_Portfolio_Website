@@ -155,7 +155,7 @@ export function Chatbot() {
 
       {/* Toggle Button */}
       <div className="flex justify-end">
-        <button onClick={() => setOpen(!open)} className="cosmic-button px-4 py-2 text-sm">
+        <button onClick={() => setOpen(!open)} className="cosmic-button px-4 py-2 text-sm cursor-pointer">
           {open ? <Minimize2 /> : <BotMessageSquare />}
         </button>
       </div>

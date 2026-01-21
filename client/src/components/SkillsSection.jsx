@@ -56,7 +56,7 @@ export const SkillsSection = () => {
                 </h2>
 
                 {/* Category Buttons */}
-                <div className="flex flex-wrap justify-center gap-4 mb-12">
+                <div className="flex flex-wrap justify-center gap-4 mb-12 cursor-pointer">
                     {categories.map((category, key) => (
                         <button 
                             key={key} 
