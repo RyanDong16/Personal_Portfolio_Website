@@ -30,11 +30,11 @@ const projects = [
     },
     {
         id: 4,
-        title: "Social Media Live Q&A Post",
-        description: "Join us live for an exclusive Q&A session with acclaimed neurosurgeon Dr. Deuk as he discusses the truth behind spinal surgery and the message of the Spine Scam movie. Don’t miss this opportunity to ask questions, gain insights, and be part of the conversation.",
+        title: "Social Media Posts",
+        description: "This project features original social media post designs created for the digital marketing campaign of the independent film Spine Scam. The content was developed for both paid and organic promotion, with a focus on platform-specific visuals, audience engagement, and brand consistency to build awareness and drive interest in the film’s release.",
         image: "/projects/LiveQ&APost.png",
         tags: ["Graphic Design", "Marketing", "Canva", "Spine Scam Movie"],
-        demoUrl: "https://drive.google.com/file/d/190Pti35qEb2g518le4GDeuIRBpI8mtb2/view?usp=sharing",
+        demoUrl: "https://drive.google.com/drive/folders/1VPo0Z8lepqXy2Kn-mn2j6zB6E7uc8VoZ?usp=drive_link",
         githubUrl: "...",
     },
     {
@@ -81,6 +81,33 @@ const projects = [
         tags: ["React", "TailWindCSS", "FastAPI", "Chatbot", "Gmail API"],
         demoUrl: "...",
         githubUrl: "https://github.com/RyanDong16/Personal_Portfolio_Website",
+    },
+    {
+        id: 10,
+        title: "Mubi Presentation",
+        description: "This presentation explores MUBI as an SVOD platform, covering its history, how the service operates, target audience, and the process of getting films onto the platform. It also breaks down filmmaker compensation, subscription structure, and key performance metrics, providing a clear overview of MUBI’s role in the independent film distribution landscape.",
+        image: "/projects/SVODmubi.png",
+        tags: ["SVOD","PowerPoint", "Platform", "Reseach"],
+        demoUrl: "https://drive.google.com/file/d/1enuwuKssZU3qnKP2QOgpA4Slcg2iGIxQ/view?usp=sharing",
+        githubUrl: "...",
+    },
+    {
+        id: 11,
+        title: "Mr. & Mrs. Smith Script Coverage",
+        description: "This script coverage is based on the 2005 film Mr. & Mrs. Smith, written by Simon Kinberg. I analyze the story structure, characters, tone, and commercial potential. The coverage highlights strengths, areas for improvement, and market positioning, reflecting industry-standard evaluation practices.",
+        image: "/projects/...",
+        tags: ["Film", "Professional", "Studio Binder", "Analysis"],
+        demoUrl: "...",
+        githubUrl: "...",
+    },
+    {
+        id: 12,
+        title: "Filmhub Presentation",
+        description: "This presentation examines FilmHub as a digital distribution aggregator, outlining what the platform is, how filmmakers submit projects, and how the service operates. It also highlights FilmHub’s partner VOD platforms, fee structure, subscription models, and revenue breakdown, offering insight into how independent films reach streaming audiences through third-party distribution channels.",
+        image: "/projects/aggregatorfilmhub.png",
+        tags: ["Aggregator", "Distributor", "Google Slides", "Research"],
+        demoUrl: "https://drive.google.com/file/d/1Sh2d7mF6bzddr6AKSLHG9Ia8eUZm5nMF/view?usp=drive_link",
+        githubUrl: "...",
     },
 ];
 

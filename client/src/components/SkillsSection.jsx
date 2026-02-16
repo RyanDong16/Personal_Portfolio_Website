@@ -21,7 +21,7 @@ const skills = [
     {name: "Adobe Premiere Pro", level: 90, category: "tools"},
     {name: "Visual Studio Code", level: 90, category: "tools"},
     {name: "Google Workspace", level: 100, category: "tools"},
-    {name: "Microsoft Office Suite", level: 100, category: "tools"},
+    {name: "Microsoft 365", level: 100, category: "tools"},
     {name: "Python", level: 80, category: "tools"},
     {name: "Java", level: 70, category: "tools"},
     {name: "C++", level: 60, category: "tools"},
@@ -31,12 +31,16 @@ const skills = [
     {name: "Attention to Detail", level: 95, category: "interpersonal"},
     {name: "Hard Working", level: 100, category: "interpersonal"},
     {name: "Customer Service", level: 100, category: "interpersonal"},
+    {name: "Teamwork", level: 95, category: "interpersonal"},
     {name: "Leadership", level: 80, category: "interpersonal"},
     {name: "Written/ Oral Communication ", level: 90, category: "interpersonal"},
     {name: "Organizational", level: 100, category: "interpersonal"},
     {name: "Problem Solving", level: 90, category: "interpersonal"},
-    {name: "Note-Taking", level: 80, category: "interpersonal"},
+    {name: "Note-Taking", level: 90, category: "interpersonal"},
     {name: "Proactive", level: 100, category: "interpersonal"},
+    {name: "Assertive", level: 900, category: "interpersonal"},
+    {name: "Reliable", level: 100, category: "interpersonal"},
+    {name: "Resourceful", level: 100, category: "interpersonal"},
 ];
 
 const categories = ["all", "frontend", "backend", "tools", "interpersonal"];
