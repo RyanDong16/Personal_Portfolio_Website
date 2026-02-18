@@ -95,9 +95,9 @@ const projects = [
         id: 11,
         title: "Mr. & Mrs. Smith Script Coverage",
         description: "This script coverage is based on the 2005 film Mr. & Mrs. Smith, written by Simon Kinberg. I analyze the story structure, characters, tone, and commercial potential. The coverage highlights strengths, areas for improvement, and market positioning, reflecting industry-standard evaluation practices.",
-        image: "/projects/...",
+        image: "/projects/scriptcoverage.png",
         tags: ["Film", "Professional", "Studio Binder", "Analysis"],
-        demoUrl: "...",
+        demoUrl: "https://drive.google.com/file/d/1coWmGPRWMo7pYPOU1R8L85pXyEOom_No/view?usp=drive_link",
         githubUrl: "...",
     },
     {
