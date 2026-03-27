@@ -39,12 +39,12 @@ const projects = [
     },
     {
         id: 5,
-        title: "Legends Plaza Website",
-        description: "Legends Plaza is an event schedule hub showcasing four iconic venues, each hosting its own lineup of electrifying rock bands. Discover where legends take the stage and plan your next live music experience.",
-        image: "/projects/legendsplaza.gif",
-        tags: ["React", "PostgreSQL", "Express", "Render"],
-        demoUrl: "https://www.loom.com/share/4ca334af24774bccb849dc97ef1d778a",
-        githubUrl: "https://github.com/RyanDong16/WEB103_project3/tree/main/WEB103_project3",
+        title: "Spiritual Lion Face Illustration",
+        description: "A detailed illustration of a lion’s face, reimagined as a symbolic representation of the sun (the radiant center of the universe). Created using Adobe Illustrator, the artwork emphasizes intricate line work, balance, and composition to convey themes of power, energy, and cosmic centrality.",
+        image: "/projects/lionface_illustrator.png",
+        tags: ["Adobe Illustrator", "Graphic Design", "Icon", "Tracing"],
+        demoUrl: "https://drive.google.com/file/d/1Iedrl2XqQb392MbFnXFE2H9m5rJE2Hp3/view?usp=sharing",
+        githubUrl: "...",
     },
     {
         id: 6,
@@ -93,6 +93,15 @@ const projects = [
     },
     {
         id: 11,
+        title: "Snowy Mountain Peaks Illustration",
+        description: "A detailed illustration of snowy mountain peaks, created using Adobe Illustrator. The artwork emphasizes intricate line work, shading, and composition to capture the majesty and rugged beauty of the mountains, evoking a sense of awe and tranquility.",
+        image: "/projects/snowmount_illustrator.png",
+        tags: ["Adobe Illustrator", "Graphic Design", "Icon", "Tracing"],
+        demoUrl: "https://drive.google.com/file/d/13qbJuI_3Akd-rq2UiVaZqOGRCDjidjVS/view?usp=sharing",
+        githubUrl: "...",
+    },
+    {
+        id: 12,
         title: "Mr. & Mrs. Smith Script Coverage",
         description: "This script coverage is based on the 2005 film Mr. & Mrs. Smith, written by Simon Kinberg. I analyze the story structure, characters, tone, and commercial potential. The coverage highlights strengths, areas for improvement, and market positioning, reflecting industry-standard evaluation practices.",
         image: "/projects/scriptcoverage.png",
@@ -101,13 +110,22 @@ const projects = [
         githubUrl: "...",
     },
     {
-        id: 12,
+        id: 13,
         title: "Filmhub Presentation",
         description: "This presentation examines FilmHub as a digital distribution aggregator, outlining what the platform is, how filmmakers submit projects, and how the service operates. It also highlights FilmHub’s partner VOD platforms, fee structure, subscription models, and revenue breakdown, offering insight into how independent films reach streaming audiences through third-party distribution channels.",
         image: "/projects/aggregatorfilmhub.png",
         tags: ["Aggregator", "Distributor", "Google Slides", "Research"],
         demoUrl: "https://drive.google.com/file/d/1Sh2d7mF6bzddr6AKSLHG9Ia8eUZm5nMF/view?usp=drive_link",
         githubUrl: "...",
+    },
+    {
+        id: 14,
+        title: "Legends Plaza Website",
+        description: "Legends Plaza is an event schedule hub showcasing four iconic venues, each hosting its own lineup of electrifying rock bands. Discover where legends take the stage and plan your next live music experience.",
+        image: "/projects/legendsplaza.gif",
+        tags: ["React", "PostgreSQL", "Express", "Render"],
+        demoUrl: "https://www.loom.com/share/4ca334af24774bccb849dc97ef1d778a",
+        githubUrl: "https://github.com/RyanDong16/WEB103_project3/tree/main/WEB103_project3",
     },
 ];
 
