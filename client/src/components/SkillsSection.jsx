@@ -23,8 +23,8 @@ const skills = [
     {name: "Google Workspace", level: 100, category: "tools"},
     {name: "Microsoft 365", level: 100, category: "tools"},
     {name: "Python", level: 80, category: "tools"},
-    {name: "Java", level: 70, category: "tools"},
-    {name: "C++", level: 60, category: "tools"},
+    {name: "Photoshop", level: 70, category: "tools"},
+    {name: "Illustrator", level: 80, category: "tools"},
     {name: "Final Draft", level: 90, category: "tools"},
 
     // Interpersonal
