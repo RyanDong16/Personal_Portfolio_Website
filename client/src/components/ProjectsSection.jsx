@@ -23,7 +23,7 @@ const projects = [
         id: 15,
         title: "Color Guard Film Pitch Deck",
         description: "This investor pitch deck for the independent film Color Guard presents a comprehensive overview of the project, including story development, target audience, and marketing strategies. It also outlines financial projections, funding requirements, and a distribution plan, demonstrating a well-rounded approach to positioning the film for both creative success and commercial viability.",
-        image: "/projects/ColorGuardPitch.png",
+        image: "/projects/ColorGuard_PitchDeck.png",
         tags: ["Canva", "Marketing", "Financial", "Distribution"],
         demoUrl: "https://drive.google.com/file/d/11qdQCqzq3YuVWAwm1a67Kmi3h1Y6Zid4/view?usp=sharing",
         githubUrl: "...",
