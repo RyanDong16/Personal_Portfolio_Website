@@ -145,6 +145,15 @@ const projects = [
         demoUrl: "https://www.loom.com/share/4ca334af24774bccb849dc97ef1d778a",
         githubUrl: "https://github.com/RyanDong16/WEB103_project3/tree/main/WEB103_project3",
     },
+    {
+        id: 17,
+        title: "Samson University Website",
+        description: "This project features a self-built Samson University admissions website created for a short film, Not Like Us, to visually portray the main character’s college acceptance experience. Designed and developed from scratch, the site combines cinematic storytelling with realistic web design to enhance the film’s authenticity and emotional impact.",
+        image: "/projects/samson.gif",
+        tags: ["React", "Student Film", "Graphic Design", "Render"],
+        demoUrl: "...",
+        githubUrl: "https://github.com/RyanDong16/Samson-University---Juilan-Website",
+    },
 ];
 
 export const ProjectsSection = () => {
