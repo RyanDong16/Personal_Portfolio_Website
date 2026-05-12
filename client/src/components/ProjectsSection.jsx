@@ -8,7 +8,7 @@ const projects = [
         image: "/projects/marketingslides.png",
         tags: ["Spine Scam Movie", "Marketing", "Group Project", "Canva"],
         demoUrl: "https://drive.google.com/file/d/1EkZnGkDZzERgKdcKyeUKXmxOk8yzd9OQ/view?usp=sharing",
-        githubUrl: "...",
+        githubUrl: "https://drive.google.com/file/d/1EkZnGkDZzERgKdcKyeUKXmxOk8yzd9OQ/view?usp=sharing",
     },
     {
         id: 2,
@@ -25,8 +25,8 @@ const projects = [
         description: "This investor pitch deck for the independent film Color Guard presents a comprehensive overview of the project, including story development, target audience, and marketing strategies. It also outlines financial projections, funding requirements, and a distribution plan, demonstrating a well-rounded approach to positioning the film for both creative success and commercial viability.",
         image: "/projects/ColorGuard_PitchDeck.png",
         tags: ["Canva", "Marketing", "Financial", "Distribution"],
-        demoUrl: "https://drive.google.com/file/d/11qdQCqzq3YuVWAwm1a67Kmi3h1Y6Zid4/view?usp=sharing",
-        githubUrl: "...",
+        demoUrl: "https://www.canva.com/design/DAHDEcgW7lA/stzG1iEBWFMqgFAGQ2TRkg/edit?ui=eyJEIjp7IlAiOnsiQiI6ZmFsc2V9fX0",
+        githubUrl: "https://drive.google.com/file/d/11qdQCqzq3YuVWAwm1a67Kmi3h1Y6Zid4/view?usp=sharing",
     },
     {
         id: 3,
@@ -151,7 +151,7 @@ const projects = [
         description: "This project features a self-built Samson University admissions website created for a short film, Not Like Us, to visually portray the main character’s college acceptance experience. Designed and developed from scratch, the site combines cinematic storytelling with realistic web design to enhance the film’s authenticity and emotional impact.",
         image: "/projects/samson.gif",
         tags: ["React", "Student Film", "Graphic Design", "Render"],
-        demoUrl: "...",
+        demoUrl: "https://samson-university-students-applications.onrender.com/",
         githubUrl: "https://github.com/RyanDong16/Samson-University---Juilan-Website",
     },
 ];

@@ -33,6 +33,14 @@ const certificates = [
     image: "/certificates/WEB103_certificate.png",
     credentialUrl: "https://drive.google.com/file/d/1nRqWXZa_Yafh6c0_ix0SKwkTSZhdDynm/view?usp=sharing",
   },
+  {
+    id: 5,
+    title: "Foundations of AI Engineering",
+    issuer: "CodePath",
+    date: "Spring 2026",
+    image: "/certificates/AI110_certificate.png",
+    credentialUrl: "https://drive.google.com/file/d/1Abi0QgjyoZ7E8EWO72tKbPj2g9d1qlX8/view?usp=sharing",
+  },
 ];
 
 export const CertificatesSection = () => {
