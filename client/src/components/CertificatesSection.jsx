@@ -41,6 +41,14 @@ const certificates = [
     image: "/certificates/AI110_certificate.png",
     credentialUrl: "https://drive.google.com/file/d/1Abi0QgjyoZ7E8EWO72tKbPj2g9d1qlX8/view?usp=sharing",
   },
+  {
+    id: 6,
+    title: "Ultimate Film Financing",
+    issuer: "Udemy",
+    date: "July 2026",
+    image: "/certificates/UdemyFilmFinancingCertificate.jpg",
+    credentialUrl: "https://drive.google.com/file/d/1gyhAaUhzScY35EVWvjG0Vq6BghTDKQlF/view?usp=sharing",
+  },
 ];
 
 export const CertificatesSection = () => {
