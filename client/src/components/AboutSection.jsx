@@ -12,11 +12,11 @@ export const AboutSection = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div className="space-y-6">
                         <h3 className="text-2xl font-semibold">
-                            Marketeer | Web Developer | Filmmaker
+                            Filmmaker | Web Developer | Marketeer
                         </h3>
                         <p className="text-muted-foreground">
-                            Currently attending San Diego State University, class of 2026, majoring in Computer Science with a minor in Television, Film, & New Media. 
-                            Maintaining a 3.69 GPA, with a strong blend of technical and creative skills.
+                            Recently graduated from San Diego State University, class of 2026, majoring in Computer Science with a minor in Television, Film, & New Media. 
+                            Maintained a 3.68 GPA, with a strong blend of technical and creative skills.
                         </p>
                         <p className="text-muted-foreground">
                             An ambitious, open-minded professional who strives to exceed expectations and brings positivity to any work environment.
@@ -24,7 +24,7 @@ export const AboutSection = () => {
                             A strong verbal and written communicator, easygoing yet determined, while bringing grit, focus, and maximum effort to everything in my path.
                         </p>
                         <p className="text-muted-foreground">
-                            The world of entertainment, technology, and marketing has always captured my imagination and curiosity. Blending creativity 
+                            The world of entertainment, technology, business, and marketing has always captured my imagination and curiosity. Blending creativity 
                             alongside my technological and strategic mindset inspires me to explore new ways of storytelling, leveraging AI, and 
                             understanding the business decisions that shape changing audience engagement. I'm motivated to constantly learn and adapt to 
                             help skyrocket the entertainment industry with innovative and impactful contributions. 
@@ -39,20 +39,6 @@ export const AboutSection = () => {
                         <div className="gradient-border p-6 card-hover">
                             <div className="flex items-start gap-4">
                                 <div className="p-3 rounded-full bg-primary/10">
-                                    <Megaphone className="h-6 w-6 text-primary"/>
-                                </div>
-                                <div className="text-left">
-                                    <h4 className="font-semibold text-lg">Marketing</h4>
-                                    <p className="text-muted-foreground">
-                                        Designed social media launch strategies for the independent film 'Spine Scam', along with creating advertising 
-                                        posts, a promotional video for a local dessert shop, and a brochure for a classic San Diego Christmas event.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="gradient-border p-6 card-hover">
-                            <div className="flex items-start gap-4">
-                                <div className="p-3 rounded-full bg-primary/10">
                                     <Film className="h-6 w-6 text-primary"/>
                                 </div>
                                 <div className="text-left">
@@ -60,6 +46,20 @@ export const AboutSection = () => {
                                     <p className="text-muted-foreground">
                                         Fascinated by all aspects of film, television, and pop culture. Proficient in Adobe Premiere Pro for editing,
                                         with a strong passion for scriptwriting using Final Draft, creating short films, and developing original movie ideas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="gradient-border p-6 card-hover">
+                            <div className="flex items-start gap-4">
+                                <div className="p-3 rounded-full bg-primary/10">
+                                    <Megaphone className="h-6 w-6 text-primary"/>
+                                </div>
+                                <div className="text-left">
+                                    <h4 className="font-semibold text-lg">Marketing</h4>
+                                    <p className="text-muted-foreground">
+                                        Designed social media launch strategies for the independent film 'Spine Scam', along with creating advertising 
+                                        posts, a promotional video for a local dessert shop, and a brochure for a classic San Diego Christmas event.
                                     </p>
                                 </div>
                             </div>
@@ -79,6 +79,15 @@ export const AboutSection = () => {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div className="mt-12 flex justify-center">
+                    <div className="gradient-border p-3 card-hover max-w-3xl">
+                        <img
+                            src="/diploma/aggregatorfilmhub.png"
+                            alt="San Diego State University diploma"
+                            className="w-full rounded-lg object-contain"
+                        />
                     </div>
                 </div>
             </div>
