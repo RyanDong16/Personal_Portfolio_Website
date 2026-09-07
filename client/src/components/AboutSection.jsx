@@ -74,7 +74,6 @@ export const AboutSection = () => {
                                     <p className="text-muted-foreground">
                                         Developed responsive websites and web applications using modern frameworks like React, 
                                         while utilizing HTML, CSS, Tailwind CSS, JavaScript, APIs, and LangChain for chatbot development.
-
                                     </p>
                                 </div>
                             </div>
@@ -83,11 +82,18 @@ export const AboutSection = () => {
                 </div>
                 <div className="mt-12 flex justify-center">
                     <div className="gradient-border p-3 card-hover max-w-3xl">
-                        <img
-                            src="/diploma/aggregatorfilmhub.png"
-                            alt="San Diego State University diploma"
-                            className="w-full rounded-lg object-contain"
-                        />
+                        <a
+                            href="https://drive.google.com/file/d/1H5uh_DJ9s0hDhmZalMmCx1chgohje7Yv/view?usp=sharing"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="cursor-pointer"
+                        >
+                            <img
+                                src="/diploma/diploma.png"
+                                alt="San Diego State University diploma"
+                                className="w-full rounded-lg object-contain"
+                            />
+                        </a>
                     </div>
                 </div>
             </div>

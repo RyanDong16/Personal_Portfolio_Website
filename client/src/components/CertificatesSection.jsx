@@ -63,7 +63,7 @@ export const CertificatesSection = () => {
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
           A selection of certifications that demonstrate my skills in web
-          development, AI, and modern web technologies.
+          development, film finance, AI, and modern web technologies.
         </p>
 
         {/* Certificates Grid */}
