@@ -4,8 +4,10 @@ import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
 import { sendEmail } from "../api/sendEmail";
 
-const emailKey = import.meta.env.VITE_EMAIL_KEY;
-const phoneKey = import.meta.env.VITE_PHONE_KEY;
+const emailKey = "ryandong16.us@gmail.com";
+// import.meta.env.VITE_EMAIL_KEY;
+const phoneKey = "+1 (***) *** - ****";
+// import.meta.env.VITE_PHONE_KEY;
 const locationKey = import.meta.env.VITE_LOCATION_KEY;
 
 export const ContactSection = () => {

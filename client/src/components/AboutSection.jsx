@@ -15,7 +15,7 @@ export const AboutSection = () => {
                             Filmmaker | Web Developer | Marketeer
                         </h3>
                         <p className="text-muted-foreground">
-                            Recently graduated from San Diego State University, class of 2026, majoring in Computer Science with a minor in Television, Film, & New Media. 
+                            Recently graduated from San Diego State University, class of 2026, majored in Computer Science with a minor in Television, Film, & New Media. 
                             Maintained a 3.68 GPA, with a strong blend of technical and creative skills.
                         </p>
                         <p className="text-muted-foreground">
