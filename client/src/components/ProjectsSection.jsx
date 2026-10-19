@@ -41,7 +41,7 @@ const projects = [
             "This investor pitch deck for the independent film Color Guard presents a comprehensive overview of the project, including story development, target audience, and marketing strategies. It also outlines financial projections, funding requirements, and a distribution plan, demonstrating a well-rounded approach to positioning the film for both creative success and commercial viability.",
         image: "/projects/ColorGuard_PitchDeck.png",
         tags: ["Canva", "Marketing", "Financial", "Distribution"],
-        demoUrl: "https://www.canva.com/design/DAHUXjSh8FY/kiT9b6YdqpZpUlw2jKQvdw/view?utm_content=DAHUXjSh8FY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4005da7a84#1",
+        demoUrl: "https://canva.link/ggtvv2y93gg1rh4",
         githubUrl: "https://drive.google.com/file/d/11qdQCqzq3YuVWAwm1a67Kmi3h1Y6Zid4/view?usp=sharing",
     },
     {
@@ -101,7 +101,7 @@ const projects = [
     },
     {
         id: 16,
-        category: "Presentations",
+        category: "Art",
         title: "RTA May 2026 Newsletter",
         description:
             "This project features a professionally designed May newsletter for Righteous Talent Agency, highlighting client bookings, industry news, and upcoming entertainment events. The newsletter demonstrates strong skills in content curation, branding, and audience engagement, while effectively communicating key updates within the entertainment industry.",
@@ -222,7 +222,7 @@ const projects = [
     },
     {
         id: 20,
-        category: "Presentations",
+        category: "Art",
         title: "RTA July 2026 Newsletter",
         description:
             "This project features a professionally designed July 2026 newsletter for Righteous Talent Agency, showcasing new clients, client bookings, entertainment industry updates, and upcoming events. The newsletter reflects strong branding, content organization, and audience engagement while presenting key agency highlights in a polished, industry-focused format.",

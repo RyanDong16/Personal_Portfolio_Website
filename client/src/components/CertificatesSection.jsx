@@ -49,6 +49,14 @@ const certificates = [
     image: "/certificates/UdemyFilmFinancingCertificate.jpg",
     credentialUrl: "https://drive.google.com/file/d/1gyhAaUhzScY35EVWvjG0Vq6BghTDKQlF/view?usp=sharing",
   },
+  {
+    id: 7,
+    title: "NYU Tisch Business of Entertainment",
+    issuer: "YellowBrick",
+    date: "October 2026",
+    image: "/certificates/YB-BOE_certificate.png",
+    credentialUrl: "https://courses.yellowbrick.co/verify/YB-BOE-D093-2026/",
+  },
 ];
 
 export const CertificatesSection = () => {
